@@ -1,4 +1,4 @@
-async function getResponseFromAPI(){
+export default async function getResponseFromAPI(){
     const promise = new Promise((resolve) => {
         setTimeout(() => {
             resolve(true);
@@ -6,6 +6,3 @@ async function getResponseFromAPI(){
     })
     return await promise;
 }
-
-getResponseFromAPI()
-    .then (res => console.log(res))
