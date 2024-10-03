@@ -44,8 +44,8 @@ export default class HolbertonClass {
 
   /**
    * Defines how the object should be converted when used as a primitive
-   * @param {String} hint - Hint indicating the preferred type of conversion ('number', 'string', or default)
-   * @returns {Number|String|Object} - The size if number is requested, the location if string is requested, otherwise the object itself
+   * @param {String} hint - Hint indicating the preferred type of conversion
+   * @returns {Number|String|Object} - The size if number is requested.
    */
   [Symbol.toPrimitive](hint) {
     if (hint === 'number') {
