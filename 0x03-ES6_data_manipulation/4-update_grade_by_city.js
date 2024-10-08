@@ -1,18 +1,25 @@
-export default function createInt8TypedArray(
-  length,
-  position,
-  value,
+export default function updateStudentGradeByCity(
+  students,
+  city,
+  newGrades,
 ) {
-  if (position >= length) {
-    throw new Error('Position outside range');
-  }
-
-  const buffer = new DataView(
-    new ArrayBuffer(length),
-    0,
-    length,
+  const filterStudents = students.filter(
+    (student) => student.location === city,
   );
 
-  buffer.setUint8(position, value);
-  return buffer;
+  const gradeStudents = filterStudents.map(
+    (student) => {
+      for (const gradeInfo of newGrades) {
+        if (student.id === gradeInfo.studentId) {
+          student.grade = gradeInfo.grade; // eslint-disable-line no-param-reassign
+        }
+      }
+      if (student.grade === undefined) {
+        student.grade = 'N/A'; // eslint-disable-line no-param-reassign
+      }
+      return student;
+    },
+  );
+
+  return gradeStudents;
 }
