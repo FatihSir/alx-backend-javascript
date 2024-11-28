@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 
-describe('Testing numbers', () => {
+describe('testing numbers', () => {
   it('8 is equal to 8', () => {
     expect(8 === 8).to.be.true;
   });
