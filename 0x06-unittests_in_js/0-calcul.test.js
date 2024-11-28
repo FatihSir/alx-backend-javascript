@@ -31,6 +31,6 @@ describe('calculateNumber', () => {
   });
 
   it('handles fractional numbers near the midpoint with trailing decimals', () => {
-    assert.strictEqual(calculateNumber(3.49999, 5.49999), 9);
+    assert.strictEqual(calculateNumber(3.49999, 5.49999), 8);
   });
 });
