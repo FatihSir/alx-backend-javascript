@@ -1,35 +1,35 @@
 const { expect } = require('chai');
 
 describe('testing numbers', () => {
-  it('8 is equal to 8', () => {
-    expect(8 === 8).to.be.true;
+  it('1 is equal to 1', () => {
+    expect(1 === 1).to.be.true;
   });
 
-  it('9 is equal to 9', () => {
-    expect(9 === 9).to.be.true;
+  it('2 is equal to 2', () => {
+    expect(2 === 2).to.be.true;
   });
 
-  it.skip('2 is equal to 5', () => {
-    expect(2 === 5).to.be.true;
+  it.skip('1 is equal to 3', () => {
+    expect(1 === 3).to.be.true;
   });
 
-  it('10 is equal to 10', () => {
-    expect(10 === 10).to.be.true;
+  it('3 is equal to 3', () => {
+    expect(3 === 3).to.be.true;
   });
 
-  it('11 is equal to 11', () => {
-    expect(11 === 11).to.be.true;
+  it('4 is equal to 4', () => {
+    expect(4 === 4).to.be.true;
   });
 
-  it('12 is equal to 12', () => {
-    expect(12 === 12).to.be.true;
+  it('5 is equal to 5', () => {
+    expect(5 === 5).to.be.true;
   });
 
-  it('13 is equal to 13', () => {
-    expect(13 === 13).to.be.true;
+  it('6 is equal to 6', () => {
+    expect(6 === 6).to.be.true;
   });
 
-  it('14 is equal to 14', () => {
-    expect(14 === 14).to.be.true;
+  it('7 is equal to 7', () => {
+    expect(7 === 7).to.be.true;
   });
 });
