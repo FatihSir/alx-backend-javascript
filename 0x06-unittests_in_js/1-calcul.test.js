@@ -26,7 +26,7 @@ describe('calculateNumber', () => {
 
   describe('operation == "DIFFERENCE"', () => {
     it('subtracts two positive numbers', () => {
-      assert.strictEqual(calculateNumber('DIFFERENCE', 7.2, 3.6), 4);
+      assert.strictEqual(calculateNumber('DIFFERENCE', 7.2, 3.6), 3);
     });
 
     it('subtracts a positive number from a negative number', () => {
@@ -48,23 +48,23 @@ describe('calculateNumber', () => {
 
   describe('operation == "RATIO"', () => {
     it('divides two positive numbers', () => {
-      assert.strictEqual(calculateNumber('RATIO', 9.0, 2.0), 4.5);
+      assert.strictEqual(calculateNumber('DIVIDE', 9.0, 2.0), 4.5);
     });
 
     it('divides a positive number by a negative number', () => {
-      assert.strictEqual(calculateNumber('RATIO', 7.5, -2.0), -4);
+      assert.strictEqual(calculateNumber('DIVIDE', 7.5, -2.0), -4);
     });
 
     it('divides a negative number by a positive number', () => {
-      assert.strictEqual(calculateNumber('RATIO', -8.1, 4.2), -2);
+      assert.strictEqual(calculateNumber('DIVIDE', -8.1, 4.2), -2);
     });
 
     it('returns an error when dividing by zero', () => {
-      assert.strictEqual(calculateNumber('RATIO', 5.0, 0), 'Error');
+      assert.strictEqual(calculateNumber('DIVIDE', 5.0, 0), 'Error');
     });
 
     it('returns an error when both numbers are zero', () => {
-      assert.strictEqual(calculateNumber('RATIO', 0.0, 0.0), 'Error');
+      assert.strictEqual(calculateNumber('DIVIDE', 0.0, 0.0), 'Error');
     });
   });
 });

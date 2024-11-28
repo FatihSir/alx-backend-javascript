@@ -7,7 +7,7 @@ const calculateNumber = (operation, num1, num2) => {
       return roundedA + roundedB;
     case 'DIFFERENCE':
       return roundedA - roundedB;
-    case 'RATIO':
+    case 'DIVIDE':
       return roundedB === 0 ? 'Error' : roundedA / roundedB;
     default:
       throw new Error('Invalid operation type');
